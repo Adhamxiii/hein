@@ -28,7 +28,7 @@
    ```
 2. Navigate to the project directory:
    ```bash
-   cd expense-tracker
+   cd hein
    ```
 3. Install the dependencies:
    ```bash
@@ -55,7 +55,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Live Demo
 
-Check out the live demo of the project [here](https://expense-tracker-beige-three.vercel.app/).
+Check out the live demo of the project [here](https://hein-ecommerce.vercel.app/).
 
 ## Contact Me
 
