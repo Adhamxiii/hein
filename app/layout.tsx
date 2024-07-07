@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Serif_Georgian } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import CartProvider from "@/components/Provider";
+import ShoppingCartModal from "@/components/ShoppingCartModal";
 
-const inter = Inter({ subsets: ["latin"] });
+const Geo = Noto_Serif_Georgian({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={Geo.className}>
+        <CartProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </CartProvider>
+      </body>
     </html>
   );
 }
